@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+ 
+<main class="position-relative">
+  <div class="main py-5">
+    <div class="container py-5">
+  <div class="row justify-content-center text-center py-5">
+    <div class="col-md-12">
+      <div class="content-holder  m-auto ">
+        <h1 class="fs-1 fw-bold main-text  position-relative  m-auto " >Bookmarker</h1>
+      </div>
+    </div>
+    <div class="hr-underline ">
+    </div>
+  </div>
+  <div class="row position-relative ">
+      <div class="col-md-12">
+        <div class="main-title text-center d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-bookmark px-3 fs-4"></i><h2> Bookmark your favorite sites </h2><i class="fa-solid fa-bookmark px-3 fs-4"></i>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="input-holder py-4">
+          <i class="fa-solid fa-book-bookmark pe-2"></i><label for="siteName" class="form-label fw-bold">Site Name</label>
+          <input placeholder="Bookmark Name" type="text" class="form-control" id="SiteName" aria-describedby="siteName">
+        </div>
+        <div class="input-holder py-4">
+          <i class="fa-solid fa-link pe-2"></i><label for="SiteURL" class="form-label fw-bold">Site URL</label>
+          <input placeholder="Website URL" type="text" class="form-control" id="SiteURL" aria-describedby="SiteURL">
+        </div>
+      </div>
+      
+      <div class="d-flex  justify-content-center"> 
+        <button onclick="GetInfo()"id="addbtn" class="btn btn-info my-5 text-white" >submit</button>
+      </div>
+    
+    <div class="hr-underline mt-4">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="talbe-holder py-5 text-center">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Index</th>
+              <th scope="col">Website Name</th>
+              <th scope="col">Visit</th>
+              <th scope="col">Delete</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</main>
+ 
+
+
+
+
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
